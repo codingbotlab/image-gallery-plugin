@@ -1,0 +1,48 @@
+/* Style for the image gallery default */
+.image-gallery-default {
+    margin-bottom: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-thumbnail img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card-title, .post-title-link {
+    font-size: .7em;
+   
+    text-align: center ;
+}
+
+/* Additional styles for post details */
+.card-date,
+.card-modified-date,
+.card-author,
+.card-categories,
+.card-tags,
+.card-comments {
+    margin-top: 5px;
+    text-align: center ;
+}
+
+.read-more {
+    margin-top: 10px;
+    text-align: center ;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+    .card {
+        margin: 5px;
+        padding: 5px;
+    }
+}

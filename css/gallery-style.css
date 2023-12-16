@@ -1,3 +1,56 @@
-/* Gallery Style CSS */
+<style>
+    .wrap {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
 
-/* Your default gallery styles here */
+    h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    form {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input[type="file"],
+    input[type="text"],
+    textarea {
+        width: 100%;
+        padding: 0px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+#image_description{
+    width: 100%;
+    height:300px;
+}
+    input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+    #uploadedImageContainer {
+        margin-top: 20px;
+    }
+
+    #uploadedImageContainer img {
+        max-width: 100%;
+        height: auto;
+    }
+
+</style>

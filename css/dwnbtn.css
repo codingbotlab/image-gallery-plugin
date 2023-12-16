@@ -1,0 +1,15 @@
+.dwnbtn {
+    text-align: center;
+}
+
+.download-button {
+    padding: 10px 20px; /* Padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Optional: Rounded corners */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Display as inline-block to align center */
+    font-size: 16px; /* Font size */
+    margin-top: 10px; /* Optional: Add margin */
+    cursor: pointer; /* Pointer cursor on hover */
+}
