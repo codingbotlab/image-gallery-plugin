@@ -12,15 +12,18 @@ function add_admin_menu() {
         'dashicons-images', // Icon (you can choose from Dashicons)
         20                  // Menu position
     );
+
+    // Add submenus for each callback
+    
+    add_submenu_page('image-gallery', 'Add Image', 'Add Image', 'manage_options', 'add-image', 'add_image_page');
+    add_submenu_page('image-gallery', 'Manage Categories', 'Manage Categories', 'manage_options', 'manage-categories', 'manage_category_page');
+    add_submenu_page('image-gallery', 'Manage Tags', 'Manage Tags', 'manage_options', 'manage-tags', 'manage_tags_page');
+    add_submenu_page('image-gallery', 'Plugin Settings', 'Plugin Settings', 'manage_options', 'plugin-settings', 'plugin_settings_page');
+    add_submenu_page('image-gallery', 'User Management', 'User Management', 'manage_options', 'user-management', 'user_management_page');
+    add_submenu_page('image-gallery', 'Upgrade', 'Upgrade', 'manage_options', 'Upgrade', 'upgrade_page');
 }
 add_action('admin_menu', 'add_admin_menu');
 
-// Callback function to display content on the custom admin menu page
-function image_gallery_page() {
-    // Your admin menu page content here
-    echo '<div class="wrap">';
-    echo '<h2>Image Gallery</h2>';
-    // Add your content here
-    echo '</div>';
-}
+
+// ... (Other callback functions remain the same)
 ?>
